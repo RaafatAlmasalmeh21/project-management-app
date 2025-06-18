@@ -1,0 +1,12 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# CI/CD & DevOps Guidelines
+
+- **Monorepo**: Turborepo (`apps/web`, `apps/mobile`, `packages/common`)  
+- **CI Workflow**: GitHub Actions – lint → unit → e2e (Playwright & Detox) → preview deploy  
+- **Mobile Builds**: Expo EAS Build per platform  
+- **Deployment**: blue-green for staging & production  
+- **Monitoring**: Sentry (web & mobile), OpenTelemetry → Grafana

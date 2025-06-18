@@ -1,0 +1,10 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Update i18n configuration
+
+- **Add** `es` and `ar` objects under `resources`, mirroring the English keys.
+- **Install & configure** the `i18next-browser-languagedetector` plugin to auto-detect user language.
+- **Enable** runtime language switching via `i18n.changeLanguage()`.

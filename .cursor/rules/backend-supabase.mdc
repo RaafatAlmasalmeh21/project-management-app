@@ -1,0 +1,15 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Supabase Backend Guidelines
+
+- **Database**: PostgreSQL 15  
+- **Extensions**: PostGIS in schema `extensions`, not `public`  
+- **RLS Policies**: Tenant isolation via `company_id` JWT claim  
+- **Data Model**: companies, users, roles, projects, sites, tasks, timesheets, equipment, etc.  
+- **Seed Data**: `supabase/seed/initial_users.sql` via `auth.sign_up`, insert `public.users`, populate `user_roles`  
+- **Edge Functions**: scheduled digests, AI forecasting  
+- **Storage & Integrations**: Supabase Storage, Resend, Twilio, Stripe/Mollie, OpenAI  
+- **Security**: JWT (15 min) + refresh, OAuth2/SSO, optional MFA, AES-256, audit logs, backups & PITR

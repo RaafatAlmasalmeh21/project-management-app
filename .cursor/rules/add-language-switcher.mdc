@@ -1,0 +1,9 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Insert language dropdown
+
+- At top-right of the nav bar, add a `<select>` bound to `i18n.changeLanguage()`.
+- Populate options for `en`, `es`, and `ar` (with RTL flip for Arabic).

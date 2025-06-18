@@ -1,0 +1,16 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Admin Web App Guidelines
+
+- **Tech Stack**: React 18, Vite, TypeScript
+- **Styling**: Tailwind CSS + shadcn/ui components
+- **Validation**: Zod schemas for all forms & API payloads
+- **Animations**: Framer Motion for page transitions and micro-interactions
+- **Internationalization**: i18n setup with en·es·ar, runtime locale switching
+- **Accessibility**: WCAG-AA compliance (semantic HTML, ARIA roles, focus management)
+- **PWA**: Service worker, install prompt, offline caching of assets
+- **Routing**: Define routes under `/login`, `/dashboard`, `/projects`, etc.
+- **Map Components**: Use a shared `<MapCard>` that renders PostGIS-powered markers

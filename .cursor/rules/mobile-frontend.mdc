@@ -1,0 +1,24 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+---
+description: Field Mobile App conventions for BuildPro
+globs:
+  - "apps/mobile/**/*"
+alwaysApply: false
+---
+
+# Field Mobile App Guidelines
+
+- **Tech Stack**: Expo SDK 50 (managed), React Native, TypeScript  
+- **Navigation**: Expo Router + React Navigation v7 (stack & tab)  
+- **UI Kit**: NativeBase (or Restyle) with dark/light theming  
+- **Offline-First**: WatermelonDB (SQLite) + background sync to Supabase  
+- **Location & Maps**: `react-native-maps`, `expo-location`  
+- **Barcode & QR**: `expo-barcode-scanner` for QR/NFC clock-ins  
+- **Push Notifications**: Expo Notifications, storing tokens in `push_subscriptions`  
+- **Screens & Modals**:  
+  - MainTab: Today, Tasks, Timesheet, Incidents, Profile  
+  - Modals: QR Clock-In, Incident Form, Toolbox Talk, Site Navigation

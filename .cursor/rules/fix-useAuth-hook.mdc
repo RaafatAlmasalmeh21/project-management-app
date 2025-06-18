@@ -1,0 +1,17 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Fix useAuth
+
+- **Invoke `getSession()`** inside the top of the `useEffect` so we bootstrap the current session on mount:
+  ```ts
+  useEffect(() => {
+    // --- call this immediately ---
+    getSession()
+
+    // Listen for auth changes
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(...)
+    …
+  }, [])

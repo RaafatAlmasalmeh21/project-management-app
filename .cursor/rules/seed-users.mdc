@@ -1,0 +1,13 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Seed Users Script
+
+1. Call `auth.sign_up(...)` for:
+   - raafatmasalmeh999@gmail.com / Admin*123 → ADMIN  
+   - manager@demo.com / Manager*123 → MANAGER  
+   - worker@demo.com / Worker*123 → WORKER  
+2. Insert into `public.users` with matching fields (`id`, `company_id`, `full_name`, etc.)  
+3. Populate `user_roles` with the correct role IDs
