@@ -4,8 +4,4 @@ export * from './types'
 // Supabase client and utilities
 export * from './supabase'
 
-// Validation schemas
-export * from './schemas'
-
-// Utilities
-export * from './utils' 
+// Note: validation schemas and additional utilities will be added in future
